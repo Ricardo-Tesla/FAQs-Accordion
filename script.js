@@ -44,7 +44,7 @@ document.addEventListener('DOMContentLoaded', function() {
             const content = item.querySelector('.dropdown-content');
             const icon = item.querySelector('.toggleIcon');
             content.classList.remove('show');
-            icon.src = '/images/icon-plus.svg';
+            icon.src = './images/icon-plus.svg';
             icon.classList.remove('rotate');
         });
     });

@@ -83,14 +83,16 @@ p {
 }
 
 /* Responsive adjustments */
-@media (max-width: 768px) {
+@media (max-width: 760px) {
     body{
         background: url('./images/background-pattern-mobile.svg') no-repeat;
         background-size: 100%;
         background-color: hsl(275, 100%, 97%);
+        min-width: 375px;
     }
     section {
-        width: auto;
-        margin: 200px 20px;
+        width: 180px;
+        margin: 100px auto;
+        
     }
 }
