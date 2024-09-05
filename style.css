@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+body {
+    margin: 0;
+    min-height: 100vh;
+    background: url('./images/background-pattern-desktop.svg') no-repeat;
+    background-size: 100%;
+    background-color: hsl(275, 100%, 97%);
+    font-family: "Work Sans", sans-serif;
+    line-height: 1.5;
+}
+
+section {
+    margin: 200px auto;
+    width: 50%;
+    max-width: 500px;
+    background-color: white;
+    border-radius: 15px;
+    padding: 10px 30px;
+}
+
+header {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+h1 {
+    font-size: 36px;
+}
+
+.faqs-dropdown {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: none;
+    border-bottom: 1px solid hsl(275, 100%, 97%);
+    padding: 15px 0;
+    cursor: pointer;
+}
+
+.toggleIcon {
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.toggleIcon.rotate {
+    transform: rotate(180deg);
+}
+
+.dropdown-content {
+    max-height: 0;
+    opacity: 0;
+    overflow: hidden;
+    transition: max-height 0.5s ease, opacity 0.5s ease;
+}
+
+.dropdown-content.show {
+    max-height: 200px;
+    opacity: 1;
+}
+
+h2 {
+    font-size: 16px;
+    margin: 0;
+    transition: color 0.3s ease;
+}
+h2:hover{
+    color: hsl(293, 91%, 54%);
+}
+
+
+p {
+    font-size: 14px;
+    color: hsl(292, 16%, 49%);
+    margin: 10px 0;
+}
+
+.footer p {
+    color: black;
+    margin-top: 50px;
+    text-align: center;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    body{
+        background: url('./images/background-pattern-mobile.svg') no-repeat;
+        background-size: 100%;
+        background-color: hsl(275, 100%, 97%);
+    }
+    section {
+        width: auto;
+        margin: 200px 20px;
+    }
+}
